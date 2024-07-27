@@ -6,6 +6,8 @@ import useInfo from "@/hooks/useInfo";
 
 const HomePage = () => {
   const {sidebar} = useInfo();
+  const youtubeKey = process.env.NEXT_PUBLIC_YOUTUBE_DATA_API_KEY;
+  console.log(youtubeKey)
 
   return (
     <>
