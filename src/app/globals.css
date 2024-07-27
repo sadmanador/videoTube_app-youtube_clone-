@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+
+img {
+  cursor: pointer;
+  height: 100%;
+}
+
+.flex-div {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  background: #f9f9f9;
+  padding-left: 17px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 2%;
+}
+
+.large-container{
+  padding-left: 7%;
+}
