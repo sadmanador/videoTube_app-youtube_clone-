@@ -11,3 +11,12 @@
 .dark-mode{
     background: #202020;
   }
+.dark-mode .play-video h3{
+    color: #fff;
+  }
+.dark-mode .play-video .publisher div p{
+    color: #fff;
+  }
+.dark-mode .recommended .side-video-list .vid-info h4{
+    color: #fff;
+  }

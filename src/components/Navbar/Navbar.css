@@ -81,7 +81,7 @@ nav {
 }
 
 #darkmode-toggle:checked + .darkmode-label:after {
-  left: 490px;
+  left: 49px;
   transform: translateX(-100%);
   background: linear-gradient(180deg, #777, #3a3a3a);
 }
