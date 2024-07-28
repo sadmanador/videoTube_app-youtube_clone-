@@ -5,13 +5,15 @@ import Sidebar from "@/components/Sidebar/Sidebar";
 import useInfo from "@/hooks/useInfo";
 
 const HomePage = () => {
-  const {sidebar} = useInfo();
+  const {sidebar, lightMode} = useInfo();
+  const youtubeKey = process.env.NEXT_PUBLIC_YOUTUBE_DATA_API_KEY;
+  console.log(youtubeKey)
 
   return (
     <>
       <Navbar/>
       <Sidebar/>
-      <div className={`container ${sidebar?"":"large-container"}`}>
+      <div className={`container ${sidebar?"":"large-container"} ${lightMode?"":"dark-mode"}`}>
         <Feed/>
       </div>
     </>

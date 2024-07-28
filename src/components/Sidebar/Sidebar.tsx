@@ -17,11 +17,11 @@ import Image from "next/image";
 import useInfo from "@/hooks/useInfo";
 
 const Sidebar = () => {
-  const {sidebar} = useInfo();
+  const {sidebar, lightMode} = useInfo();
 
 
   return (
-    <div className={`sidebar ${sidebar?"":"small-sidebar"}`}>
+    <div className={`sidebar ${sidebar?"":"small-sidebar"} ${lightMode?'':"dark-mode"}`}>
       <div className="shortcut-links">
         <div className="side-link">
           <Image src={home} alt="" />
@@ -58,7 +58,7 @@ const Sidebar = () => {
         <hr />
       </div>
       <div className="subscribed-list">
-        <h3>Subscribed</h3>
+        <h3 className="subscribe-title">Subscribed</h3>
         <div className="side-link">
           <Image src={jack} alt="" />
           <p>PewDiePie</p>

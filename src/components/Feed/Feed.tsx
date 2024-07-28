@@ -7,12 +7,15 @@ import thumbnail5 from "@/assets/thumbnail5.png";
 import thumbnail6 from "@/assets/thumbnail6.png";
 import thumbnail7 from "@/assets/thumbnail7.png";
 import thumbnail8 from "@/assets/thumbnail8.png";
+import useInfo from "@/hooks/useInfo";
 import Image from "next/image";
 import Link from "next/link";
 
 const Feed = () => {
+  const {lightMode} = useInfo();
+
   return (
-    <div className="feed">
+    <div className={`feed ${lightMode?'':"dark-mode"}`}>
       <Link href={`/25/1345`} className="card">
         <Image src={thumbnail1} alt="" />
         <h2>Best channel to learn coding for web development carrier</h2>
