@@ -8,6 +8,16 @@
   padding-top: 80px;
 }
 
+.dark-mode{
+  background: #202020;
+}
+.dark-mode p{
+  color: #b8b8b8;
+}
+.dark-mode .subscribe-title{
+  color: #b8b8b8;
+}
+
 .shortcut-links img {
   width: 20px;
   margin-right: 20px;

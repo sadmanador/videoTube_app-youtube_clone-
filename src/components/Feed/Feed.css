@@ -6,6 +6,10 @@
   margin-top: 15px;
 }
 
+.dark-mode .card h2{
+  color: #fff;
+}
+
 .card{
   display: flex;
   flex-direction: column;

@@ -1,12 +1,10 @@
 "use client";
 import InfoContextProps from "@/types/InfoType";
-import React, {
-  createContext,
-  ReactNode,
-  useState
-} from "react";
+import React, { createContext, ReactNode, useState } from "react";
 
-export const InfoContext = createContext<InfoContextProps | undefined>(undefined);
+export const InfoContext = createContext<InfoContextProps | undefined>(
+  undefined
+);
 
 interface AppVarsProps {
   children: ReactNode;
@@ -14,8 +12,16 @@ interface AppVarsProps {
 
 const AppInfoContext: React.FC<AppVarsProps> = ({ children }) => {
   const [sidebar, setSidebar] = useState<boolean>(true);
+  const [lightMode, setLightMode] = useState<boolean>(true);
 
-  const info: InfoContextProps = { sidebar, setSidebar };
+  const info: InfoContextProps = {
+    sidebar,
+    setSidebar,
+    lightMode,
+    setLightMode,
+  };
+
+  console.log(lightMode)
 
   return <InfoContext.Provider value={info}>{children}</InfoContext.Provider>;
 };
